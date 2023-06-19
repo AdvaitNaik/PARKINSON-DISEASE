@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>َPatient Login</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+  <!-- <style type="text/css">
+    body {
+      background-image: url("glass.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: Graduate;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .box {
+      width: 300px;
+      padding: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgb(0, 0, 0);
+      color: #FFF;
+      text-align: center;
+    }
+
+    .box h1 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .box input[type="text"],
+    .box input[type="password"] {
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #3498db;
+      padding: 14px 10px;
+      width: 200px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+    }
+
+    ::placeholder {
+      color: white;
+      font-family: Graduate;
+    }
+
+    .box input[type="text"]:focus,
+    .box input[type="password"]:focus {
+      width: 280px;
+      border-color: white;
+    }
+
+    .box input[type="submit"] {
+      border: 0;
+      background: none;
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      border: 2px solid #3498db;
+      padding: 14px 40px;
+      outline: none;
+      color: white;
+      border-radius: 24px;
+      transition: 0.25s;
+      cursor: pointer;
+      font-family: Graduate;
+    }
+
+    .box input[type="submit"]:hover {
+      background: #3498db;
+      color: white;
+    }
+
+    .empulse {
+      color: white;
+      text-align: center;
+
+    }
+  </style> -->
+  <style type="text/css">
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .row{
+      border-radius: 30px;
+      margin-top: 120px;
+      background: white;
+      }      
+    img.img-fluid{
+      margin:0;
+      border-radius: 15px;
+    }
+    h2{
+      font-family: Prompt;
+    }
+    .btn1{
+      border: none;
+      outline: none;
+      background-color: lightblue;
+      height: 50px;
+      width:100%;
+      color: black;
+      font-weight: bold;
+    }
+    .btn1:hover{
+      background: white;
+      border: 1px solid;
+      color: black;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <!-- <form class="box" method="post">
+    <h1>Login</h1>
+    <input type="text" name="patient_id" placeholder="PATIENT ID" required>
+    <input type="text" name="email" placeholder="EMAIL ID" required>
+    <input type="password" name="password" placeholder="Password" required> 
+    <input type="submit" name="" value="Login">
+
+    <button><a href="{{url_for('logout') }}">LOG OUT</a></button>
+  </form> -->
+
+
+  <section class="Form my-4 mx-5">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-5 col-sm-5 shadow-lg p-3 mb-5 bg-white rounded">
+          <img src="{{url_for('static', filename='images/loginimg.png')}}" class="img-fluid">
+        </div>
+        <div class="col-lg-7 col-sm-7 px-5 pt-5 shadow-lg p-3 mb-5 bg-white rounded">
+         <h2> PATIENT </h2>
+          <form method="post">
+            <div class="form-row">
+              <div class=col-lg-7>
+                <input type="text" name="patient_id" placeholder="PATIENT ID" class="form-control my-3 p-4" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class=col-lg-7>
+                <input type="text" name="email" class="form-control my-3 p-4" placeholder="EMAIL ID" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class=col-lg-7>
+                <input type="submit" name="" value="LOGIN" class="form-control my-3 p-4">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class=col-lg-7>
+                <button type="button" class="btn1"><a href="{{url_for('logout') }}">LOGOUT</a></button>
+              </div>
+            </div>
+            <a href="#">Forgot Password?</a>
+            <p>Don't have an account?<a href="">Register here</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+   
+ </section>
+
+  <script src="assets/js/vendor/jquery-2.1.4.min.js" type="text/javascript"></script>
+  <script src="assets/js/popper.min.js" type="text/javascript"></script>
+  <script src="assets/js/plugins.js" type="text/javascript"></script>
+  <script src="assets/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
